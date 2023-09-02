@@ -89,6 +89,7 @@ font-family: 'Pacifico', cursive;
 
 
 @media only screen and (max-width:476px){
+    
     .box {
         overflow: hidden;
         overflow-y: scroll;
@@ -115,6 +116,7 @@ font-family: 'Pacifico', cursive;
     .box button{
         height: 13%;
         width: 81%;
+         font-size: 10px;
     }
 
 }
