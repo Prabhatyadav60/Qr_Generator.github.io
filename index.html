@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="qr.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@800&family=Dancing+Script:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+<body>
+    <div class="container">
+        <div class="box">
+           <Div class="h"><h>QR Code Generator</h></Div> 
+            <input type="text" placeholder="Enter your text or URL" id="text"><br>
+            <div class="qrimg" id="qrimg">
+            <img src=""  id="imgQr">
+        </div>
+            <button id="btn" onclick="GenerateQr()">Generate QR code</button>
+         
+        </div>
+    </div>
+    <script>
+        let qrimg=document.getElementById("qrimg")
+  let text=document.getElementById("text");
+  let image=document.getElementById("imgQr");
+function GenerateQr(){
+    qrimg.classList.add("view");
+    imgQr.src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data="+text.value;
+}
+
+
+    </script>
+</body>
+</html>
