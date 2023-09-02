@@ -36,14 +36,14 @@ font-family: 'Pacifico', cursive;
 .box input{
   
     border: 2px solid black;
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Barlow', sans-serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'Pacifico', cursive;
     margin-top: 4%;
     padding: 7px;
     border-radius: 7.5px;
-    height: 10%;
+    height: 8%;
     width: 80%;
 
 }.box button {
