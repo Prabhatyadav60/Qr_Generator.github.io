@@ -35,17 +35,7 @@ function GenerateQr(){
 }
 const image1 = document.getElementById('imgQr');
 
-// Add a click event listener to the image
-image.addEventListener('click', function() {
-    // Create an anchor element to trigger the download
-    const a = document.createElement('a');
-    a.href = image.src; // Set the href attribute to the image source
-    a.download = "https://api.qrserver.com/v1/create-qr-code/?size=100x100&data="+text.value;; // Set the download attribute with the desired filename
-    a.style.display = 'none'; // Hide the anchor element
-    // Trigger a click event on the anchor element
-    a.click();
 
-});
 
     </script>
 </body>
